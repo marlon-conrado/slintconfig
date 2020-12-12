@@ -1,0 +1,2 @@
+# slintconfig
+Config example slint
