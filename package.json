@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "node_modules/.bin/eslint src/**/*.js"
+    "lint": "node_modules/.bin/eslint src/**/*.js",
+    "test": "node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "eslint-plugin-prettier": "^3.2.0",
     "eslint-plugin-sonarjs": "^0.5.0",
     "global": "^4.4.0",
+    "jest": "^26.6.3",
     "prettier": "^2.2.1"
   }
 }
