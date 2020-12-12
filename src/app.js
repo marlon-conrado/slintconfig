@@ -2,4 +2,4 @@ const getAlgo = () => {
   return "algo";
 };
 
-console.log(getAlgo());
+module.exports = { getAlgo };
