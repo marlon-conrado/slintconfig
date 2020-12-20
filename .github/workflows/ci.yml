@@ -1,6 +1,6 @@
 name: Test Project
 
-on: pull_request
+on: [release]
 
 jobs:
   continuous_integration:
@@ -22,5 +22,9 @@ jobs:
         run: yarn install --immutable
       - name: Static Code Analysis
         run: yarn lint
-      - name: Test
-        run: yarn test
+      - name: Unit Tests
+        run: yarn test --silent
+      - name: Know Githun event
+        run: console.log("${{ github.event_name }}")
+      - name: Know branch name
+        run: console.log("${{ context.payload.pull_request.head.ref }}")
