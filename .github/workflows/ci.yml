@@ -30,4 +30,4 @@ jobs:
       - name: Know Githun event
         run: console.log(${{ github.event_name }})
       - name: Know branch name
-        run: console.log(${{ context.payload.pull_request.head.ref }})
+        run: console.log(${{ github.payload.pull_request.head.ref }})
