@@ -1,6 +1,9 @@
 name: Test Project
 
-on: [release]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   continuous_integration:
@@ -25,6 +28,6 @@ jobs:
       - name: Unit Tests
         run: yarn test --silent
       - name: Know Githun event
-        run: console.log("${{ github.event_name }}")
+        run: echo ${{ github.event_name }}
       - name: Know branch name
-        run: console.log("${{ context.payload.pull_request.head.ref }}")
+        run: echo ${{ context.payload.pull_request.head.ref }}
