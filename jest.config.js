@@ -4,7 +4,7 @@
  */
 
 // eslint-disable-next-line import/no-default-export
-export default {
+module.exports = {
   moduleFileExtensions: ['js', 'json'],
   rootDir: './src',
   testRegex: '.*\\.test\\.js$',
