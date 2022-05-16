@@ -7,7 +7,7 @@
 export default {
   moduleFileExtensions: ['js', 'json'],
   rootDir: './src',
-  testRegex: '.*\\.spec\\.js$',
+  testRegex: '.*\\.test\\.js$',
   collectCoverageFrom: ['**/*.(t|j)s'],
   coverageDirectory: '../coverage',
   testEnvironment: 'node',
