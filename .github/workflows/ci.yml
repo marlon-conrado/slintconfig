@@ -26,7 +26,7 @@ jobs:
       - name: Static Code Analysis
         run: yarn lint
       - name: Unit Tests
-        run: yarn test
+        run: yarn test:cov
       - name: Know Githun event
         run: echo ${{ github.event_name }}
       - name: Know branch name
